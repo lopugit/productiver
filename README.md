@@ -16,3 +16,11 @@ Plans
 - TB 1608 Zoom Feature Glitch
 - TB 1614 TikTok - Social Tracking
 ```
+
+## Assignee ID
+
+You can get your assignee id by going to your profile url that looks like https://app.productive.io/organisation/people/123123/overview
+
+## Organisation ID and Token
+
+This is under settings in the API section and you can also generate your read read/write token here
