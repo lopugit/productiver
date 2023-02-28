@@ -52,7 +52,7 @@ async function getToday() {
   const PPP = sortedByProject.reduce((acc, task) => {
     const { attributes, projectName } = task
     const { title, task_number } = attributes
-    return acc + `- ${maps[projectName]} ${task_number} ${title}
+    return acc + `- ${maps[projectName] || projectName} ${task_number} ${title}
 `
   }, `Plans
 `)
