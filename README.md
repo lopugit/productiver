@@ -27,4 +27,4 @@ This is under settings in the API section and you can also generate your read re
 
 ## To Run
 
-just run `npm i` or `yarn` and then run `node index.js`
+Populate a .env file, then run `npm i` or `yarn` and then run `node index.js`
