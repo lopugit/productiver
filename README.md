@@ -24,3 +24,7 @@ You can get your assignee id by going to your profile url that looks like https:
 ## Organisation ID and Token
 
 This is under settings in the API section and you can also generate your read read/write token here
+
+## To Run
+
+just run `npm i` or `yarn` and then run `node index.js`
