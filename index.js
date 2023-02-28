@@ -1,6 +1,7 @@
 const axios = require('axios')
 require('dotenv').config()
 const fs = require('fs')
+const maps = require('./maps.js')
 
 async function getToday() {
   // before date DD-MM-YYYY format of Date.now()
@@ -24,6 +25,38 @@ async function getToday() {
   })
   console.log('Got', data.length, 'results')
   fs.writeFileSync('output.json', JSON.stringify(data, null, 2))
+
+  const proms = []
+
+  for (const task of data) {
+    const { relationships: { project: { data: { id: projectId } } } } = task
+    proms.push(
+      axios.get('https://api.productive.io/api/v2/projects/' + projectId, {
+        headers: {
+          'X-Auth-Token': process.env.TOKEN,
+          'X-Organization-Id': process.env.ORGANISATION_ID,
+        }
+      }).then(project => {
+        task.projectName = project.data.data.attributes.name
+      })
+    )
+  }
+
+  await Promise.all(proms)
+
+  const sortedByProject = data.sort((a, b) => {
+    return a.projectName.localeCompare(b.projectName)
+  })
+
+  // create Plans report for each task
+  const PPP = sortedByProject.reduce((acc, task) => {
+    const { attributes, projectName } = task
+    const { title, task_number } = attributes
+    return acc + `- ${maps[projectName]} ${task_number} ${title}
+`
+  }, `Plans
+`)
+  fs.writeFileSync('plans.txt', PPP)
 }
 
 getToday()

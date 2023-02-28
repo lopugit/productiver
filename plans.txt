@@ -1,0 +1,9 @@
+Plans
+- Propel 559 Gender View
+- Propel 899 Size Button Line Update
+- TB 1602 Little Data - Client ID
+- TB 1608 Zoom Feature Glitch
+- TB 1614 TikTok - Social Tracking
+- TB 1617 Homepage CTA - Not Clicking Through
+- TB 1620 Homepage linking
+- TB 1624 Product Not Visible On Website
