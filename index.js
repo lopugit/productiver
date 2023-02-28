@@ -6,7 +6,6 @@ const maps = require('./maps.js')
 async function getToday() {
   // before date DD-MM-YYYY format of Date.now()
   const beforeDate = new Date(Date.now() + 86400000).toISOString().split('T')[0]
-  console.log(beforeDate)
   const all = await axios.get('https://api.productive.io/api/v2/tasks', {
     params: {
       filter: {
@@ -57,6 +56,9 @@ async function getToday() {
   }, `Plans
 `)
   fs.writeFileSync('plans.txt', PPP)
+  console.log(`
+`)
+  console.log(PPP)
 }
 
 getToday()
