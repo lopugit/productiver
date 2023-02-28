@@ -1,5 +1,11 @@
 # Productiver
 
+## To Run
+
+Populate a .env file, then run `npm i` or `yarn` and then run `node index.js`
+
+## .env
+
 ```.env
 TOKEN="d326XXXXX-XXXX-XXXX-XXXX-XXXX-27e93"
 ORGANISATION_ID="1234"
@@ -24,7 +30,3 @@ You can get your assignee id by going to your profile url that looks like https:
 ## Organisation ID and Token
 
 This is under settings in the API section and you can also generate your read read/write token here
-
-## To Run
-
-Populate a .env file, then run `npm i` or `yarn` and then run `node index.js`
