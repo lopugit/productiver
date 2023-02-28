@@ -22,6 +22,7 @@ async function getToday() {
     // filter task by date before current date
     return task.attributes.due_date <= beforeDate
   })
+  console.log(`\n`)
   console.log('Got', data.length, 'results')
   fs.writeFileSync('output.json', JSON.stringify(data, null, 2))
 
@@ -56,8 +57,7 @@ async function getToday() {
   }, `Plans
 `)
   fs.writeFileSync('plans.txt', PPP)
-  console.log(`
-`)
+  console.log(`\n`)
   console.log(PPP)
 }
 
