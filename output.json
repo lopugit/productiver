@@ -1,0 +1,870 @@
+[
+  {
+    "id": "2372662",
+    "type": "tasks",
+    "attributes": {
+      "title": "Gender View",
+      "description": "<div>Hi @[{\"type\":\"person\",\"id\":\"236701\",\"label\":\"Joel Krause\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/066/833/thumb/attachments_2Ffiles_2F001_2F999_2F540_2Foriginal_2FTeam_Headshot_Joel_Krause_1__281_29.jpg?1660125436\",\"attachment_url\":null,\"is_done\":false}]&nbsp;<br><br>The team would like the ability to be able to have a gender view in place of the model/product view.&nbsp;<br>They would also like the ability to set that when they jump on a female of male the right view is showing for their gender.&nbsp;<br>While we have discussed being able to add genders to each of the collections in sanity to define what view they land on. We also need to think about unisex collections and how this could be handled.&nbsp;</div>",
+      "number": "559",
+      "task_number": "559",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2022-02-28T03:55:08.124+01:00",
+      "updated_at": "2023-02-28T22:15:44.657+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-28",
+      "repeat_origin_id": null,
+      "email_key": "0e7c2744e93453e99232ff99b8c15e27",
+      "custom_fields": {
+        "7295": "25216",
+        "7296": "25218",
+        "7297": "25225"
+      },
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": 525973792,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 69,
+      "last_activity_at": "2023-02-28T22:15:32.000+01:00",
+      "initial_estimate": 960,
+      "remaining_time": -5,
+      "billable_time": 975,
+      "worked_time": 965,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "113010"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "157764"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "479431"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": []
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4187972",
+    "type": "tasks",
+    "attributes": {
+      "title": "Little Data - Client ID",
+      "description": "<div>Hey @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] <br><br>We had Joel do some work for inserting the Little Data tracking script - <a href=\"https://app.productive.io/1476-dotdev/projects/226421/tasks/task/4031433?board=332250&amp;filter=MjcxNzk2\">https://app.productive.io/1476-dotdev/projects/226421/tasks/task/4031433?board=332250&amp;filter=MjcxNzk2</a><br><br>Is it possible for Joel to confirm the Client ID from Step 3, and confirm everything is all good with Step 4?<br><br>Info below:<br><br><strong>Action: Request that DotDev has (a) completed step 3 and 4, and (b) they will have sent back a Google Client ID.&nbsp;<br>&nbsp;This is what we need to send on to LittleData to complete analytics installation.&nbsp;</strong></div><div>&nbsp;</div><div>Instructions from LittleData &gt; Step 3 and 4</div><div><a href=\"https://headlessdemo.littledata.io/\">https://headlessdemo.littledata.io/</a></div><div>&nbsp;</div><div><strong>3. Get the client ID from the browser &gt; DotDev is to provide the Google Client ID</strong></div><div>For Littledata to link server events with browser pageviews, you need to get the client ID from the browser. See how we <a href=\"https://github.com/littledata/headless-shopify-demo/blob/master/client/buyNow/getGoogleClientId.js\"><strong>get the client ID</strong></a> for GA4 before the user clicks 'Add to cart', or try the 'Buy Now' button above to see it in action.</div><div>&nbsp;</div><div><strong>4. Add these identifiers to checkout custom Attributes</strong></div><div>Shopify allows you to update the checkout customAttributes array after a checkout ID is created. In <a href=\"https://github.com/littledata/headless-shopify-demo/blob/master/server/checkout/createShopifyCheckout.js\"><strong>this NodeJS example</strong></a> see how we set the checkout customAttributes as [ { key: \"google-clientID, value: \"GA_COOKIE_CLIENTID\" },{ key: \"ga4session-clientID, value: \"GA4_SESSION_HERE\" } ]. *</div><div></div>",
+      "number": "1602",
+      "task_number": "1602",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-14T04:58:42.183+01:00",
+      "updated_at": "2023-02-28T03:00:57.653+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-14",
+      "repeat_origin_id": null,
+      "email_key": "934eb014ed1699d00795872cbac7420a",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": -2033540978,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 1139,
+      "last_activity_at": "2023-02-28T03:00:47.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": 510,
+      "worked_time": 420,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": []
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4204996",
+    "type": "tasks",
+    "attributes": {
+      "title": "Zoom Feature Glitch",
+      "description": "<div>Hey @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}]&nbsp;<br><br>The zoom feature on products seems to be very glitchy.<br><br>When pinching in it and out the page glitches, reloads. I've attached a screen recording.<br><br>Kindest, Courteney</div>",
+      "number": "1608",
+      "task_number": "1608",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-16T00:29:55.157+01:00",
+      "updated_at": "2023-02-28T22:10:57.472+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-16",
+      "repeat_origin_id": null,
+      "email_key": "264a14918842d1a20c440fe161992ffd",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": -2013433448,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 1145,
+      "last_activity_at": "2023-02-28T22:10:44.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": 45,
+      "worked_time": 45,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2522099"
+          },
+          {
+            "type": "attachments",
+            "id": "2522100"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4205220",
+    "type": "tasks",
+    "attributes": {
+      "title": "Size Button Line Update",
+      "description": "<div>Hi @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] ,<br><br>Can we please get an estimate on having the size button line changed from a '/' to a '|' ?&nbsp;@[{\"type\":\"attachment\",\"id\":\"2522133\",\"label\":\"image.png\",\"avatar_url\":null,\"attachment_url\":\"https://s3-eu-west-1.amazonaws.com/productive-files-production/attachments/files/002/522/133/original/image.png\",\"is_done\":false}] <br><br>Whilst still keeping the updated M and W rather than Mens and Womens that is waiting to be deployed 🙂<br><br>Thanks,<br>CC: @[{\"type\":\"person\",\"id\":\"133107\",\"label\":\"Tina Gamble\",\"avatar_url\":null,\"attachment_url\":null,\"is_done\":false}] @[{\"type\":\"person\",\"id\":\"157764\",\"label\":\"Libby Spiteri\",\"avatar_url\":null,\"attachment_url\":null,\"is_done\":false}] @[{\"type\":\"person\",\"id\":\"285831\",\"label\":\"Louise Bolger\",\"avatar_url\":null,\"attachment_url\":null,\"is_done\":false}]&nbsp;</div>",
+      "number": "899",
+      "task_number": "899",
+      "private": false,
+      "due_date": "2023-02-28",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-16T01:14:21.039+01:00",
+      "updated_at": "2023-02-27T06:59:25.572+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-16",
+      "repeat_origin_id": null,
+      "email_key": "460017cc2e75367c13a64ce274baacdd",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": 2130048256,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 236,
+      "last_activity_at": "2023-02-26T22:11:27.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": 240,
+      "worked_time": 210,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "113010"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "182658"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "296989"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2522133"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4232572",
+    "type": "tasks",
+    "attributes": {
+      "title": "TikTok - Social Tracking",
+      "description": "<div>Hi @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] <br><br>Could we please review the TikTok tracking script on both websites?<br><br>We are receiving this message on our account - @[{\"type\":\"attachment\",\"id\":\"2534729\",\"label\":\"image.png\",\"avatar_url\":null,\"attachment_url\":\"https://s3-eu-west-1.amazonaws.com/productive-files-production/attachments/files/002/534/729/original/image.png\",\"is_done\":false}] <br><br>Please let me know if you need the pixel's re-provided to you - I am not sure if i am reading the above error/prompt correctly in that it just needs to be re-inserted in the correct area of the website.<br><br>While we are reviewing TikTok - could we also ensure the <strong>Facebook</strong> and <strong>Pinterest</strong> pixel is inserted into the correct area of the website?<br><br>Kindest, Courteney</div>",
+      "number": "1614",
+      "task_number": "1614",
+      "private": false,
+      "due_date": "2023-02-27",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-21T06:51:20.658+01:00",
+      "updated_at": "2023-02-28T22:58:08.612+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-21",
+      "repeat_origin_id": null,
+      "email_key": "c2af344ed63efe30274e9b2673368711",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": -2031530225,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 1151,
+      "last_activity_at": "2023-02-28T22:57:57.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": 45,
+      "worked_time": 45,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2534729"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4249444",
+    "type": "tasks",
+    "attributes": {
+      "title": "Homepage CTA - Not Clicking Through",
+      "description": "<div>hi @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] <br><br>We have the following CTA on a homepage block not clicking through, it loads back to the top of the homepage.@[{\"type\":\"attachment\",\"id\":\"2542214\",\"label\":\"image.png\",\"avatar_url\":null,\"attachment_url\":\"https://s3-eu-west-1.amazonaws.com/productive-files-production/attachments/files/002/542/214/original/image.png\",\"is_done\":false}]&nbsp;<br><br>We've had this issue in the past during testing phases - why is this happening and what can we do to ensure it's not a reoccuring issue?<br><br>Works perfectly on desktop.<br><br>This is happening on both websites.<br><br>Kindest, Courteney</div>",
+      "number": "1617",
+      "task_number": "1617",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-22T21:49:11.313+01:00",
+      "updated_at": "2023-02-28T23:39:58.141+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-23",
+      "repeat_origin_id": null,
+      "email_key": "b9f6649a13c9d2a690a3b6002bee2154",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": -2031362662,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 1154,
+      "last_activity_at": "2023-02-28T23:39:47.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": 15,
+      "worked_time": 15,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2542214"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4260538",
+    "type": "tasks",
+    "attributes": {
+      "title": "Homepage linking",
+      "description": "<div>Hi @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] <br><br>Could we please have the option to link to a URL as well as a document on all homepage block types?<br><br>We'd like to link a block&nbsp; @[{\"type\":\"attachment\",\"id\":\"2546665\",\"label\":\"image.png\",\"avatar_url\":null,\"attachment_url\":\"https://s3-eu-west-1.amazonaws.com/productive-files-production/attachments/files/002/546/665/original/image.png\",\"is_done\":false}] to this link:<br><a href=\"https://www.tonybianco.com/au/account/exclusives/behind-the-scenes-of-interlude-23\">https://www.tonybianco.com/au/account/exclusives/behind-the-scenes-of-interlude-23</a><br><br>The idea is that it would prompt the user to sign in and they'd be taken straight to the article. However when linking to the above using the Document method, it leads to a 404 page.@[{\"type\":\"attachment\",\"id\":\"2546666\",\"label\":\"image.png\",\"avatar_url\":null,\"attachment_url\":\"https://s3-eu-west-1.amazonaws.com/productive-files-production/attachments/files/002/546/666/original/image.png\",\"is_done\":false}]&nbsp;<br><br>I've since changed it to Log in, but if we could please have this look at that would be fab.<br><br>Kindest, Courteney</div>",
+      "number": "1620",
+      "task_number": "1620",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-24T03:20:53.949+01:00",
+      "updated_at": "2023-02-28T23:48:24.783+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-24",
+      "repeat_origin_id": null,
+      "email_key": "6109fc252b7e67e560d7df1ae5471315",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": 2127377230,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [
+        "Estimation"
+      ],
+      "position": 1157,
+      "last_activity_at": "2023-02-28T23:48:14.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": null,
+      "worked_time": null,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "46947"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2546665"
+          },
+          {
+            "type": "attachments",
+            "id": "2546666"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  },
+  {
+    "id": "4281677",
+    "type": "tasks",
+    "attributes": {
+      "title": "Product Not Visible On Website",
+      "description": "<div>Hi @[{\"type\":\"person\",\"id\":\"293787\",\"label\":\"Ally Moravski\",\"avatar_url\":\"https://files.productive.io/users/avatars/000/080/600/thumb/attachments_2Ffiles_2F001_2F992_2F317_2Foriginal_2F1625574779793.jpeg?1659930119\",\"attachment_url\":null,\"is_done\":false}] ,<br> <br>Cc: @[{\"type\":\"person\",\"id\":\"46947\",\"label\":\"Courteney Hurst\",\"avatar_url\":null,\"attachment_url\":null,\"is_done\":false}]<br> <br>Hope you are well! <br><br>One of our team members has noticed that Ines Black Como is not showing on the website. <br><br>As far as I'm aware everything is correctly set up in Shopify. The product status is active and all sales channels and apps are selected, we also have stock of this product. <br><br>Link to Ines Black Como on Shopify - <a href=\"https://tony-bianco.myshopify.com/admin/products/6598091505736\">https://tony-bianco.myshopify.com/admin/products/6598091505736</a><br><br>I've also attached a screenshot of the Shopify page.<br><br>Can we please have someone look into this?&nbsp;<br><br>Thanks,<br>Zali</div>",
+      "number": "1624",
+      "task_number": "1624",
+      "private": false,
+      "due_date": "2023-03-01",
+      "start_date": null,
+      "closed_at": null,
+      "created_at": "2023-02-28T00:54:56.697+01:00",
+      "updated_at": "2023-02-28T23:49:47.464+01:00",
+      "repeat_schedule_id": null,
+      "repeat_on_interval": null,
+      "repeat_on_monthday": null,
+      "repeat_on_weekday": [],
+      "repeat_on_date": "1980-02-28",
+      "repeat_origin_id": null,
+      "email_key": "44081a6dd7307a6bebb00cb7e92def69",
+      "custom_fields": null,
+      "todo_count": null,
+      "open_todo_count": null,
+      "subtask_count": null,
+      "open_subtask_count": null,
+      "creation_method_id": 1,
+      "subtask_position": null,
+      "todo_assignee_ids": [],
+      "task_dependency_count": 0,
+      "type_id": 1,
+      "blocking_dependency_count": 0,
+      "waiting_on_dependency_count": 0,
+      "linked_dependency_count": 0,
+      "global_position": 2146143702,
+      "closed": false,
+      "due_time": null,
+      "tag_list": [],
+      "position": 1161,
+      "last_activity_at": "2023-02-28T23:49:35.000+01:00",
+      "initial_estimate": null,
+      "remaining_time": null,
+      "billable_time": null,
+      "worked_time": null,
+      "deleted_at": null
+    },
+    "relationships": {
+      "organization": {
+        "data": {
+          "type": "organizations",
+          "id": "1476"
+        }
+      },
+      "project": {
+        "data": {
+          "type": "projects",
+          "id": "18032"
+        }
+      },
+      "creator": {
+        "data": {
+          "type": "people",
+          "id": "340166"
+        }
+      },
+      "assignee": {
+        "data": {
+          "type": "people",
+          "id": "288113"
+        }
+      },
+      "last_actor": {
+        "data": {
+          "type": "people",
+          "id": "293787"
+        }
+      },
+      "task_list": {
+        "data": {
+          "type": "task_lists",
+          "id": "48812"
+        }
+      },
+      "parent_task": {
+        "data": null
+      },
+      "workflow_status": {
+        "data": {
+          "type": "workflow_statuses",
+          "id": "52749"
+        }
+      },
+      "repeated_task": {
+        "data": null
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "2554895"
+          }
+        ]
+      },
+      "custom_field_people": {
+        "data": []
+      }
+    }
+  }
+]
